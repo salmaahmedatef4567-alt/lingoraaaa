@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="lingoraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#8B78D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#lingoraGrad)"/>
+  <circle cx="24" cy="24" r="14" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9"/>
+  <ellipse cx="24" cy="24" rx="7" ry="14" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.9"/>
+  <line x1="10" y1="24" x2="38" y2="24" stroke="#FFFFFF" stroke-width="2.2" opacity="0.9"/>
+  <path d="M20 18 L28 24 L20 30" fill="none" stroke="#E9E5FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

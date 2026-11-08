@@ -1,0 +1,143 @@
+/* LINGORA Mobile-First Responsive Architecture
+   Breakpoints:
+   320px  - Small mobile
+   375px  - Standard mobile
+   425px  - Large mobile
+   768px  - Tablet
+   1024px - Small laptop
+   1280px - Desktop
+   1440px - Large desktop / Ultrawide
+*/
+
+/* Base Mobile & Small Mobile (320px - 425px) */
+@media (max-width: 639px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  h1 { font-size: 1.85rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.25rem !important; }
+  h4 { font-size: 1.1rem !important; }
+
+  .hero-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .hero-buttons .btn {
+    width: 100% !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .grid-cols-auto-fit {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-4) !important;
+  }
+
+  .card {
+    padding: var(--space-4) !important;
+  }
+
+  /* Full width form elements */
+  input, select, textarea, button.btn-lg {
+    font-size: 16px !important; /* Prevents iOS auto-zoom */
+    width: 100% !important;
+  }
+
+  /* Table responsiveness */
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Navigation drawer */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-bg-card);
+    z-index: 100;
+    padding: 1.5rem;
+    overflow-y: auto;
+  }
+}
+
+/* Tablet (640px to 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-title {
+    font-size: 2.75rem !important;
+  }
+
+  .grid-cols-auto-fit {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+/* Small Laptop & Desktop (1024px to 1279px) */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem !important;
+  }
+
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* Large Desktop (1280px to 1439px) */
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 3.75rem !important;
+  }
+}
+
+/* Ultrawide Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .hero-title {
+    font-size: 4.25rem !important;
+  }
+
+  .container {
+    max-width: 1380px !important;
+  }
+}
+
+/* Accessible Touch Targets for all portable devices */
+@media (pointer: coarse) {
+  button, .btn, a.btn, input, select {
+    min-height: 44px;
+  }
+}
+
+/* Print Styles for Graduation Certificates */
+@media print {
+  header, footer, aside, nav, .btn, .hide-on-print {
+    display: none !important;
+  }
+
+  body, html {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .certificate-frame {
+    border: 4px double #172554 !important;
+    padding: 3rem !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+}
+
